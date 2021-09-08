@@ -62,7 +62,7 @@ func Init() *gin.Engine {
 	{
 		defaultRouter.DELETE("/logout", jwtMiddleware.LogOut)
 
-		defaultRouter.POST("/users", AccessForAdmin(CreateUser))
+		defaultRouter.POST("/user", AccessForAdmin(CreateUser))
 
 		defaultRouter.POST("/payment", Payment)
 
