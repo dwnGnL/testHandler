@@ -1,0 +1,31 @@
+{
+  "app": {
+    "serverName": "localhost",
+    "portRun": 8080,
+    "accessTknTimeout":3000,
+    "refreshTknTimeout":700000,
+    "realm": "lk.humo.io",
+    "access_key": "66c8e62c01ac11ac62327c178ed6c4de143959c1f410",
+    "refresh_key": "bcisinvzzxjjrci6mtasinvzzxjoyw1lijoidhr0dcj9",
+    "timeout": 30
+  },
+  "db": "host=localhost user=postgres port=5432 dbname=testHandler password=1234 sslmode=disable",
+  "captcha": {
+    "font": "./db/comic.ttf",
+    "enable": true,
+    "show_cnt": 5,
+    "exp_seconds": 10
+  },
+  "cache":{
+    "equal_requests_time": {
+      "max_repeating": 10
+    },
+    "less_requests_time": {
+      "max_repeating": 10,
+      "duration_seconds": 1
+    },
+    "cleaning_time_seconds": 120,
+    "checking_time_seconds": 1,
+    "wait_time_seconds": 60
+  }
+}
